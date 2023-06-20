@@ -13,7 +13,7 @@ namespace CheckersWithAI.ConsoleUI
                 input = Console.ReadLine();
                 if (IsValid(input))
                 {
-                    return new Move(input[0], input[1] - '0');
+                    return new Move(input[0], input[1] - '0', input[3], input[4] - 1);
                 }
             }
         }
@@ -24,6 +24,11 @@ namespace CheckersWithAI.ConsoleUI
                 input[0] >= Constants.minLetter &&
                 input[0] <= Constants.maxLetter &&
                 input[1] >= '0' + Constants.minNumber &&
-                input[1] <= '0' + Constants.maxNumber;
+                input[1] <= '0' + Constants.maxNumber &&
+                input[2] == ' ' &&
+                input[3] >= Constants.minLetter &&
+                input[3] <= Constants.maxLetter &&
+                input[4] >= '0' + Constants.minNumber &&
+                input[4] <= '0' + Constants.maxNumber;
     }
 }

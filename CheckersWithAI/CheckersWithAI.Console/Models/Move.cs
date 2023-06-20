@@ -2,14 +2,20 @@
 {
     internal class Move
     {
-        public Move(char letter, int number)
+        public Move(char pieceLetter, int pieceNumber, char moveLetter, int moveNumber)
         {
-            Letter = letter;
-            Number = number;
+            PieceLetter = pieceLetter;
+            PieceNumber = pieceNumber;
+            MoveLetter = moveLetter;
+            MoveNumber = moveNumber;
         }
 
-        public char Letter { get; }
+        public char PieceLetter { get; }
 
-        public int Number { get; }
+        public int PieceNumber { get; }
+
+        public int MoveLetter { get; }
+
+        public int MoveNumber { get; }
     }
 }
