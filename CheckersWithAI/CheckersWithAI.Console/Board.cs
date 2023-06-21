@@ -37,7 +37,23 @@ namespace CheckersWithAI.ConsoleUI
 
         }
 
-        public GameStatus GameStatus => throw new NotImplementedException();
+        public GameStatus GameStatus
+        {
+            get
+            {
+                if (board.All(b => b.Value == Piece.Human || b.Value == Piece.HumanKing))
+                {
+                    return GameStatus.HumanWon;
+                }
+
+                if (board.All(b => b.Value == Piece.AI || b.Value == Piece.AIKing))
+                {
+                    return GameStatus.HumanWon;
+                }
+
+                return GameStatus.Running;
+            }
+        }
 
         public bool AIMakesMove()
         {
