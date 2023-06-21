@@ -72,6 +72,14 @@ namespace CheckersWithAI.ConsoleUI
                                 array2d[i, j * 2] = '╔';
                                 array2d[i, j * 2 + 1] = '╗';
                                 break;
+                            case Piece.AIKing:
+                                array2d[i, j * 2] = '└';
+                                array2d[i, j * 2 + 1] = '┘';
+                                break;
+                            case Piece.HumanKing:
+                                array2d[i, j * 2] = '╚';
+                                array2d[i, j * 2 + 1] = '╝';
+                                break;
                         }
                     }
                     else
