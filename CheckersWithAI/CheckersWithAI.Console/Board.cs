@@ -48,7 +48,7 @@ namespace CheckersWithAI.ConsoleUI
 
                 if (board.All(b => b.Value == Piece.AI || b.Value == Piece.AIKing))
                 {
-                    return GameStatus.HumanWon;
+                    return GameStatus.AIWon;
                 }
 
                 return GameStatus.Running;
