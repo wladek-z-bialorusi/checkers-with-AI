@@ -1,4 +1,4 @@
-﻿namespace CheckersWithAI.ConsoleUI
+﻿namespace CheckersWithAI.ConsoleUI.Enums
 {
     internal enum GameStatus
     {

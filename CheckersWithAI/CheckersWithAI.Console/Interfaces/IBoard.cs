@@ -1,4 +1,5 @@
-﻿using CheckersWithAI.ConsoleUI.Models;
+﻿using CheckersWithAI.ConsoleUI.Enums;
+using CheckersWithAI.ConsoleUI.Models;
 
 namespace CheckersWithAI.ConsoleUI.Interfaces
 {
