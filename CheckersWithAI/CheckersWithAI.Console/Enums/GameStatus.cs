@@ -3,7 +3,7 @@
     internal enum GameStatus
     {
         Running,
-        PlayerWon,
+        HumanWon,
         AIWon
     }
 }
